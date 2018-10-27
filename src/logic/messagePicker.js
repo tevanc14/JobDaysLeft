@@ -3,7 +3,10 @@ const todayMessages = [
   "It's game time for the new job!",
   "Crush that first day at the new job!",
   "Hope you're in the mood for success today, because that's what's gonna happen.",
-  "Be careful not to kick too much ass today."
+  "Be careful not to kick too much ass today.",
+  "New job, new day, great time!",
+  "Time to grab ahold of a brand new opportunity.",
+  "The next step of your career begins today."
 ];
 
 const singularMessages = [
@@ -11,7 +14,10 @@ const singularMessages = [
   "more day with your old coworkers.",
   "day more at your old office.",
   "day before you never go back to your old job.",
-  "day left of that chapter of your life."
+  "day left of the previous chapter of your life.",
+  "trip left to your old office.",
+  "more conversation with your old boss.",
+  "more day where you barely have to work anyway."
 ];
 
 const pluralMessages = [
@@ -19,7 +25,10 @@ const pluralMessages = [
   "more days with your old coworkers.",
   "days more at your old office.",
   "days before you never go back to your old job.",
-  "days left of that chapter of your life."
+  "days left of the previous chapter of your life.",
+  "trips left to your old office.",
+  "more conversations with your old boss.",
+  "more days where you barely have to work anyway."
 ];
 
 export default function messagePicker(daysLeft) {
