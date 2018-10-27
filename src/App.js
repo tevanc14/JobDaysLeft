@@ -26,8 +26,8 @@ class App extends Component {
       <div className="App">
         <ReactCSSTransitionGroup
           transitionName="fade"
-          transitionEnterTimeout={700}
-          transitionLeaveTimeout={700}
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={500}
         >
           {this.state.askingQuestion && (
             <div className="date-picker">
@@ -41,6 +41,7 @@ class App extends Component {
                   this.setState({ focused: focused })
                 }
                 hideKeyboardShortcutsPanel={true}
+                readOnly={true}
               />
             </div>
           )}
