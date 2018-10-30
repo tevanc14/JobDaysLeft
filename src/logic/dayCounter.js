@@ -8,11 +8,17 @@ export default function daysLeft(date) {
 
 function countDays(startDate, endDate) {
   let count = 0;
+  console.log(startDate.hour());
   let currentDate = startDate;
   while (currentDate <= endDate) {
     const dayOfWeek = currentDate.day();
-    if (!(dayOfWeek === 6 || dayOfWeek === 0)) count++;
+    if (!(dayOfWeek === 6 || dayOfWeek === 0)) {
+      count++;
+    }
     currentDate = currentDate.add(1, "days");
+  }
+  if (startDate.hour() > 17) {
+    count--;
   }
   return count;
 }

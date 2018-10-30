@@ -1,12 +1,22 @@
+const afterTodayMessages = [
+  "Hope the day went well!",
+  "Today was the first of many.",
+  "Hope it's not worse than the old one.",
+  "New job = Great job",
+  "New job > Old job"
+];
+
 const todayMessages = [
   "TODAY IS THE FIRST DAY OF YOUR NEW JOB! GOOD LUCK!",
   "It's game time for the new job!",
   "Crush that first day at the new job!",
-  "Hope you're in the mood for success today, because that's what's gonna happen.",
-  "Be careful not to kick too much ass today.",
+  "Hope you're in the mood for success, because that's what's gonna happen.",
+  "Be careful not to kick too much ass.",
   "New job, new day, great time!",
   "Time to grab ahold of a brand new opportunity.",
-  "The next step of your career begins today."
+  "The next step of your career begins now.",
+  "New job = Great job",
+  "New job > Old job"
 ];
 
 const singularMessages = [
@@ -33,7 +43,10 @@ const pluralMessages = [
 
 export default function messagePicker(daysLeft) {
   let message = "";
-  if (daysLeft === 0) {
+  if (daysLeft === -1) {
+    message =
+      afterTodayMessages[Math.floor(Math.random() * afterTodayMessages.length)];
+  } else if (daysLeft === 0) {
     message = todayMessages[Math.floor(Math.random() * todayMessages.length)];
   } else if (daysLeft === 1) {
     message =
