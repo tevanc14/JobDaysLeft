@@ -8,7 +8,7 @@ This was inspired by my wife starting a new job and I would count how many days 
 morning before we would leave. This site will be far faster and more accurate at counting days
 and will have more varied responses than I would normally.
 
-<https://jobdaysleft.firebaseapp.com/>
+<https://jobdaysleft.sleek.software/>
 
 ## Day Counting Assumptions
 
