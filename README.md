@@ -13,4 +13,5 @@ and will have more varied responses than I would normally.
 ## Day Counting Assumptions
 
 - One's work week is Monday - Friday
+- One's work day is 8:00am-5:00pm
 - One's start day at a new job is the business day immediately following the last day at an old job
